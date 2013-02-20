@@ -43,6 +43,7 @@ group :development, :test do
   gem 'guard-spork'            # spork integration
   gem 'database_cleaner'       # cleanup database in tests
   gem 'fabrication'            # model stubber
+  gem 'shoulda'                # model spec tester
   gem 'rb-inotify'             # linux notification gem
   gem 'libnotify'              # linux notification gem
 end
