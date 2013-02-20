@@ -1,4 +1,8 @@
 EmberAuthRailsDemo::Application.routes.draw do
+  namespace :api do
+    resources :posts, only: [:index, :show]
+  end
+
   devise_for :users, controllers: {sessions: 'sessions'}
 
   # The priority is based upon order of creation:
