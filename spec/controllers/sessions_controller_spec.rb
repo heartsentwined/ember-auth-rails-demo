@@ -10,7 +10,7 @@ describe SessionsController do
 
   describe 'POST create' do
     context 'no param' do
-      before { post 'create' }
+      before { post :create }
 
       it 'returns http 400' do
         response.response_code.should == 400
@@ -18,7 +18,7 @@ describe SessionsController do
     end
 
     context 'wrong credentials' do
-      before { post 'create', email: user.email, password: '' }
+      before { post :create, email: user.email, password: '' }
 
       it 'returns http 401' do
         response.response_code.should == 401
@@ -26,7 +26,7 @@ describe SessionsController do
     end
 
     context 'normal email + password auth' do
-      before { post 'create', email: user.email, password: user.password }
+      before { post :create, email: user.email, password: user.password }
       subject { JSON.parse response.body }
 
       it 'includes user id' do should include 'user_id' end
@@ -40,7 +40,7 @@ describe SessionsController do
 
   describe 'DELETE destroy' do
     context 'no param' do
-      before { delete 'destroy' }
+      before { delete :destroy }
 
       it 'returns http 400' do
         response.response_code.should == 400
@@ -48,7 +48,7 @@ describe SessionsController do
     end
 
     context 'wrong credentials' do
-      before { delete 'destroy', auth_token: '' }
+      before { delete :destroy, auth_token: '' }
 
       it 'returns http 401' do
         response.response_code.should == 401
@@ -56,7 +56,7 @@ describe SessionsController do
     end
 
     context 'normal auth token param' do
-      before { delete 'destroy', auth_token: user.authentication_token }
+      before { delete :destroy, auth_token: user.authentication_token }
       subject { JSON.parse response.body }
 
       it 'includes user id' do
