@@ -1,0 +1,3 @@
+EmberAuthRailsDemo.Router.map(function() {
+
+});

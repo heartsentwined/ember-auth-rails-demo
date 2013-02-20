@@ -27,7 +27,6 @@ gem 'jquery-rails'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -36,3 +35,24 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'rspec-rails'              # for tests
+gem 'spork'                    # speedier tests
+gem 'guard-rspec'              # watch app files
+gem 'guard-spork'              # spork integration
+gem 'database_cleaner'         # cleanup database in tests
+gem 'fabrication'              # model stubber
+gem 'rb-inotify'               # linux notification gem
+gem 'libnotify'                # linux notification gem
+
+gem 'devise'                   # server-side authentication
+gem 'bcrypt-ruby'              # password encryption
+
+gem 'active_model_serializers' # works out of the box with ember-data
+
+gem 'ember-rails'              # ember framework
+gem 'ember-auth-rails'         # client-side authentication
+
+gem 'haml'                     # easier to write templates
+gem 'haml-rails'               # rails integration
+gem 'hamlbars'                 # easier to write handlebars
