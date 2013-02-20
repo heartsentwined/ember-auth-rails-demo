@@ -67,5 +67,8 @@ module EmberAuthRailsDemo
 
     # heroku asset precompilation fix
     config.assets.initialize_on_precompile = false
+
+    # heroku unicorn logging fix
+    config.logger = Logger.new(STDOUT)
   end
 end
