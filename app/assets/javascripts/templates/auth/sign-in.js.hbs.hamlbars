@@ -1,0 +1,6 @@
+%form
+  %label Email
+  =hb 'view Ember.TextField valueBinding="view.email"'
+  %label Password
+  =hb 'view Ember.TextField type="password" valueBinding="view.password"'
+  %button Sign In
