@@ -5,6 +5,10 @@ EmberAuthRailsDemo::Application.routes.draw do
 
   devise_for :users, controllers: {sessions: 'sessions'}
 
+  root to: 'home#index'
+
+  get '*ember' => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
