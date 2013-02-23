@@ -1,6 +1,5 @@
 module Api
-  class UsersController < BaseController
+  class UsersController < AuthController
     actions :index, :show
-    before_filter :authenticate_user!
   end
 end
