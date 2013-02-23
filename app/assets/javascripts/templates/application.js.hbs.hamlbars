@@ -1,2 +1,8 @@
 =hb 'view EmberAuthRailsDemo.AuthView'
+.nav
+  =hb 'linkTo posts.index' do
+    Posts list
+  =hb 'if Auth.authToken' do
+    =hb 'linkTo users.index' do
+      Users list
 =hb 'outlet'

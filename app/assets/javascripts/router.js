@@ -1,3 +1,0 @@
-EmberAuthRailsDemo.Router.map(function() {
-
-});
