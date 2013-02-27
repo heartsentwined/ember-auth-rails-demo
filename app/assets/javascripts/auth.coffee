@@ -3,3 +3,6 @@ Auth.Config.reopen
   tokenDestroyUrl: '/users/sign_out'
   tokenKey: 'auth_token'
   idKey: 'user_id'
+  rememberMe: true
+  rememberTokenKey: 'remember_token'
+  rememberPeriod: 7
