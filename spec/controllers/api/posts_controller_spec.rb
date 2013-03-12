@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Api::PostsController do
-  let(:user) { Fabricate(:user) }
   let(:post) { Fabricate(:post) }
   before { post } # initialize it
 
