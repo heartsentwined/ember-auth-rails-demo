@@ -11,4 +11,3 @@ You can use the following credentials to sign in at the heroku app:
 * email: `bar@example.com`, password: `barpassword`
 
 The tutorial is [in the wiki](https://github.com/heartsentwined/ember-auth-rails-demo/wiki/Home).
-
