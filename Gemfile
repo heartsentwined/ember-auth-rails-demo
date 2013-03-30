@@ -1,51 +1,26 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '~> 3.2'
+gem 'pg',    '~> 0.14'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'pg'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-rails', '~> 2.2'
+  gem 'sass-rails',   '~> 3.2'
+  gem 'coffee-rails', '~> 3.2'
+  gem 'uglifier',     '~> 1.3'
 end
 
-gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
-
 group :development, :test do
-  gem 'rspec-rails'            # for tests
-  gem 'spork'                  # speedier tests
-  gem 'guard-rspec'            # watch app files
-  gem 'guard-spork'            # spork integration
-  gem 'database_cleaner'       # cleanup database in tests
-  gem 'fabrication'            # model stubber
-  gem 'shoulda'                # model spec tester
-  gem 'rb-inotify'             # linux notification gem
-  gem 'libnotify'              # linux notification gem
+  gem 'rspec-rails'                 # for tests
+  gem 'spork'                       # speedier tests
+  gem 'guard-rspec'                 # watch app files
+  gem 'guard-spork'                 # spork integration
+  gem 'database_cleaner'            # cleanup database in tests
+  gem 'fabrication'                 # model stubber
+  gem 'shoulda'                     # model spec tester
+  gem 'rb-inotify', require: false  # Linux file notification
+  gem 'rb-fsevent', require: false  # OSX file notification
+  gem 'rb-fchange', require: false  # Windows file notification
 end
 
 gem 'devise'                   # server-side authentication
