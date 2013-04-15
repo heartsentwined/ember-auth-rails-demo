@@ -31,10 +31,7 @@ gem 'active_model_serializers' # works out of the box with ember-data
 
 gem 'ember-rails'              # ember framework
 gem 'ember-auth-rails'         # client-side authentication
-
-gem 'haml'                     # easier to write templates
-gem 'haml-rails'               # rails integration
-gem 'hamlbars'                 # easier to write handlebars
+gem 'emblem-rails'             # easier to write templates
 
 gem 'unicorn'                  # better server gem for heroku
 
