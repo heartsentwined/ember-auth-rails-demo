@@ -47,9 +47,9 @@ describe Api::UsersController do
       it 'wraps around user' do should include 'user' end
       context 'inside user' do
         subject { (JSON.parse response.body)['user'] }
-        it 'includes id' do should include 'id' end
-        it 'includes email' do should include 'email' end
-        it 'includes param' do should include 'param' end
+        it { should include 'id' }
+        it { should include 'email' }
+        it { should include 'param' }
       end
 
       it 'returns http 200' do

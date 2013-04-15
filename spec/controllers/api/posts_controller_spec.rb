@@ -22,9 +22,9 @@ describe Api::PostsController do
     it 'wraps around post' do should include 'post' end
     context 'inside post' do
       subject { (JSON.parse response.body)['post'] }
-      it 'includes id' do should include 'id' end
-      it 'includes title' do should include 'title' end
-      it 'includes param' do should include 'param' end
+      it { should include 'id' }
+      it { should include 'title' }
+      it { should include 'param' }
     end
 
     it 'returns http 200' do
