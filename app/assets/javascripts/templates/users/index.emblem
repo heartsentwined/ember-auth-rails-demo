@@ -1,0 +1,6 @@
+if Auth.authToken
+  ul: each controller
+    li: linkTo users.show this
+      email
+else
+  | You need to sign in first

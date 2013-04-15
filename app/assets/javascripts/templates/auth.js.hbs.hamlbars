@@ -1,4 +1,0 @@
-=hb 'if Auth.authToken' do
-  =hb 'view EmberAuthRailsDemo.AuthSignOutView'
-  =hb 'else'
-  =hb 'view EmberAuthRailsDemo.AuthSignInView'

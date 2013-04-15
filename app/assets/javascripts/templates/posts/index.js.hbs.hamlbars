@@ -1,5 +1,0 @@
-%ul
-  =hb 'each controller' do
-    %li
-      =hb 'linkTo posts.show this' do
-        =hb 'title'

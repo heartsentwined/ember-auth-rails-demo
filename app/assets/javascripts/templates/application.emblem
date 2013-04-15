@@ -1,0 +1,8 @@
+EmberAuthRailsDemo.AuthView
+.nav
+  linkTo posts.index
+    | Posts list
+  if Auth.authToken
+    linkTo users.index
+      | Users list
+outlet

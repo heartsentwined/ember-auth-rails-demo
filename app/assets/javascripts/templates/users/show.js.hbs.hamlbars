@@ -1,9 +1,0 @@
-=hb 'if Auth.authToken' do
-  %h1
-    =hb 'email'
-
-  =hb 'linkTo users.index' do
-    Back to users list
-
-  =hb 'else'
-  You need to sign in first.

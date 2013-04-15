@@ -1,5 +1,0 @@
-%h1
-  =hb 'title'
-
-=hb 'linkTo posts.index' do
-  Back to posts list

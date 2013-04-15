@@ -1,9 +1,0 @@
-=hb 'if Auth.authToken' do
-  %ul
-    =hb 'each controller' do
-      %li
-        =hb 'linkTo users.show this' do
-          =hb 'email'
-
-  =hb 'else'
-  You need to sign in first.

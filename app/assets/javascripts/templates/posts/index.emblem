@@ -1,0 +1,3 @@
+ul: each controller
+  li: linkTo posts.show this
+    = title
