@@ -63,7 +63,7 @@ GEM
     ember-auth-rails (4.0.1)
       ember-auth-source
       rails
-    ember-auth-source (3.1.2)
+    ember-auth-source (4.1.4)
       ember-source (>= 0.0.2, != 1.0.0.rc1.2, != 1.0.0.rc1.1, != 1.0.0.rc1.0.0, != 1.0.0.pre4.1)
     ember-data-source (0.0.5)
       ember-source
@@ -85,7 +85,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    fabrication (2.6.4)
+    fabrication (2.6.5)
     ffi (1.7.0)
     formatador (0.2.4)
     guard (1.7.0)
@@ -101,7 +101,7 @@ GEM
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
-    handlebars-source (1.0.0.rc.3)
+    handlebars-source (1.0.0.rc3)
     has_scope (0.5.1)
     hike (1.2.2)
     i18n (0.6.1)
