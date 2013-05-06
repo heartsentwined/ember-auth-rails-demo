@@ -1,8 +1,13 @@
-Auth.Config.reopen
-  tokenCreateUrl: '/users/sign_in'
-  tokenDestroyUrl: '/users/sign_out'
+EmberAuthRailsDemo.Auth = Em.Auth.create
+  signInEndPoint: '/users/sign_in'
+  signOutEndPoint: '/users/sign_out'
+
   tokenKey: 'auth_token'
-  idKey: 'user_id'
-  rememberMe: true
-  rememberTokenKey: 'remember_token'
-  rememberPeriod: 7
+  tokenIdKey: 'user_id'
+
+  modules: ['emberData', 'rememberable']
+
+  rememberable:
+    tokenKey: 'remember_token'
+    period: 7
+    autoRecall: true

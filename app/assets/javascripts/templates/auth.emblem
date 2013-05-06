@@ -1,4 +1,4 @@
-if Auth.authToken
+if EmberAuthRailsDemo.Auth.signedIn
   EmberAuthRailsDemo.AuthSignOutView
 else
   EmberAuthRailsDemo.AuthSignInView

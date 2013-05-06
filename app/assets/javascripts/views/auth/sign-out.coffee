@@ -4,4 +4,4 @@ EmberAuthRailsDemo.AuthSignOutView = Em.View.extend
   submit: (event, view) ->
     event.preventDefault()
     event.stopPropagation()
-    Auth.signOut()
+    EmberAuthRailsDemo.Auth.signOut()

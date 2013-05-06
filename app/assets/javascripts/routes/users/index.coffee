@@ -1,7 +1,4 @@
-EmberAuthRailsDemo.UsersIndexRoute = Auth.Route.extend
-  init: ->
-    @on 'authAccess', ->
-      # do something
-
+EmberAuthRailsDemo.UsersIndexRoute = Em.Route.extend
   model: ->
-    EmberAuthRailsDemo.User.find()
+    if EmberAuthRailsDemo.Auth.get('signedIn')
+      EmberAuthRailsDemo.User.find()

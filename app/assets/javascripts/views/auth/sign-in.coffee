@@ -8,7 +8,8 @@ EmberAuthRailsDemo.AuthSignInView = Em.View.extend
   submit: (event, view) ->
     event.preventDefault()
     event.stopPropagation()
-    Auth.signIn
-      email:    @get 'email'
-      password: @get 'password'
-      remember: @get 'remember'
+    EmberAuthRailsDemo.Auth.signIn
+      data:
+        email:    @get 'email'
+        password: @get 'password'
+        remember: @get 'remember'
