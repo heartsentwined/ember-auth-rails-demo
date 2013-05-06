@@ -2,4 +2,4 @@ h1
   = title
 
 linkTo posts.index
-  Back to posts list
+  | Back to posts list
