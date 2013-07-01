@@ -1,7 +1,4 @@
-if EmberAuthRailsDemo.Auth.signedIn
-  h1
-    email
-  linkTo users.index
-    | Back to users list
-else
-  | You need to sign in first
+h1
+  email
+linkTo users.index
+  | Back to users list

@@ -2,7 +2,6 @@ EmberAuthRailsDemo.AuthView
 .nav
   linkTo posts.index
     | Posts list
-  if EmberAuthRailsDemo.Auth.signedIn
-    linkTo users.index
-      | Users list
+  linkTo users.index
+    | Users list
 outlet

@@ -6,3 +6,4 @@ EmberAuthRailsDemo.Router.map ->
     @route 'show', {path: '/:post_id'}
   @resource 'users', ->
     @route 'show', {path: '/:user_id'}
+  @route 'sign-in'

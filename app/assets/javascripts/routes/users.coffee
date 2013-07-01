@@ -1,4 +1,3 @@
-EmberAuthRailsDemo.UsersRoute = Em.Route.extend
+EmberAuthRailsDemo.UsersRoute = Em.Route.extend EmberAuthRailsDemo.Auth.AuthRedirectable,
   model: ->
-    if EmberAuthRailsDemo.Auth.get('signedIn')
-      EmberAuthRailsDemo.User.find()
+    EmberAuthRailsDemo.User.find()

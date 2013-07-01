@@ -1,7 +1,3 @@
-EmberAuthRailsDemo.UsersShowRoute = Em.Route.extend
+EmberAuthRailsDemo.UsersShowRoute = Em.Route.extend EmberAuthRailsDemo.Auth.AuthRedirectable,
   serialize: (model) ->
     user_id: model.get('param')
-
-  model: (params) ->
-    if EmberAuthRailsDemo.Auth.get('signedIn')
-      EmberAuthRailsDemo.User.find(params.user_id)

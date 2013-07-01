@@ -5,7 +5,16 @@ EmberAuthRailsDemo.Auth = Em.Auth.create
   tokenKey: 'auth_token'
   tokenIdKey: 'user_id'
 
-  modules: ['emberData', 'rememberable']
+  modules: ['emberData', 'authRedirectable', 'actionRedirectable', 'rememberable']
+
+  authRedirectable:
+    route: 'sign-in'
+
+  actionRedirectable:
+    signInRoute: 'users'
+    signInSmart: true
+    signInBlacklist: ['sign-in']
+    signOutRoute: 'posts'
 
   rememberable:
     tokenKey: 'remember_token'

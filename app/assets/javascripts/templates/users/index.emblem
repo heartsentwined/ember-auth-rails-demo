@@ -1,6 +1,3 @@
-if EmberAuthRailsDemo.Auth.signedIn
-  ul: each controller
-    li: linkTo users.show this
-      email
-else
-  | You need to sign in first
+ul: each controller
+  li: linkTo users.show this
+    email
