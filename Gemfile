@@ -33,8 +33,7 @@ gem 'ember-rails'              # ember framework
 gem 'ember-auth-rails'         # client-side authentication
 gem 'emblem-rails'             # easier to write templates
 
-gem 'ember-source',      '>= 1.0.0.rc6'
-gem 'handlebars-source', '>= 1.0.0.rc4'
+gem 'ember-source', '>= 1.0.0.rc6.2'
 
 gem 'unicorn'                  # better server gem for heroku
 

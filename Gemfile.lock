@@ -49,7 +49,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.2)
+    coffee-script-source (1.6.3)
     database_cleaner (1.0.1)
     devise (2.2.4)
       bcrypt-ruby (~> 3.0)
@@ -60,7 +60,7 @@ GEM
     ember-auth-rails (4.0.2)
       ember-auth-source
       rails
-    ember-auth-source (7.0.0)
+    ember-auth-source (7.0.1)
       ember-source (>= 1.0.0.rc6)
     ember-data-source (0.13)
       ember-source
@@ -72,12 +72,12 @@ GEM
       execjs (>= 1.2)
       handlebars-source
       railties (>= 3.1)
-    ember-source (1.0.0.rc6)
-      handlebars-source (= 1.0.0.rc4)
+    ember-source (1.0.0.rc6.2)
+      handlebars-source (= 1.0.12)
     emblem-rails (0.1.1)
       barber-emblem (~> 0.1.1)
       ember-rails (>= 0.11.1)
-    emblem-source (0.2.9)
+    emblem-source (0.3.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -97,7 +97,7 @@ GEM
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
-    handlebars-source (1.0.0.rc4)
+    handlebars-source (1.0.12)
     has_scope (0.5.1)
     hike (1.2.3)
     i18n (0.6.1)
@@ -224,12 +224,11 @@ DEPENDENCIES
   devise
   ember-auth-rails
   ember-rails
-  ember-source (>= 1.0.0.rc6)
+  ember-source (>= 1.0.0.rc6.2)
   emblem-rails
   fabrication
   guard-rspec
   guard-spork
-  handlebars-source (>= 1.0.0.rc4)
   inherited_resources
   jquery-rails (~> 2.2)
   newrelic_rpm
