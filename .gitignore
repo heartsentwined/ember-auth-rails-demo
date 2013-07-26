@@ -16,6 +16,8 @@
 
 # rvm
 .rvmrc
+.ruby-version
+.ruby-gemset
 
 # Gemnasium gem configuration file
 config/gemnasium.yml
