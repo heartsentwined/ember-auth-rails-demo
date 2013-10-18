@@ -1,2 +1,3 @@
 form submit='signOut'
+  auth.user.email
   button Sign out

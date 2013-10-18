@@ -1,2 +1,9 @@
 render 'auth'
+
+nav
+  link-to 'posts.index'
+    | Posts list
+  link-to 'users.index'
+    | Users list
+
 outlet

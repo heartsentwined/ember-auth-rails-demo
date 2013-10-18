@@ -1,0 +1,3 @@
+ul: each controller
+  li: link-to 'users.show' this
+    email

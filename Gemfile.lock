@@ -57,6 +57,18 @@ GEM
       railties (>= 3.2.6, < 5)
       warden (~> 1.2.3)
     diff-lcs (1.2.4)
+    ember-auth-module-action_redirectable-rails (1.0.0)
+      ember-auth-module-action_redirectable-source
+      rails
+    ember-auth-module-action_redirectable-source (1.0.2)
+      ember-auth-source (~> 9.0)
+      ember-source (~> 1.0)
+    ember-auth-module-auth_redirectable-rails (1.0.0)
+      ember-auth-module-auth_redirectable-source
+      rails
+    ember-auth-module-auth_redirectable-source (1.0.3)
+      ember-auth-source (~> 9.0)
+      ember-source (~> 1.0)
     ember-auth-module-ember_data-rails (1.0.0)
       ember-auth-module-ember_data-source
       rails
@@ -247,6 +259,8 @@ DEPENDENCIES
   coffee-rails (~> 4.0)
   database_cleaner (~> 1.0)
   devise (>= 3.0, < 3.1)
+  ember-auth-module-action_redirectable-rails (~> 1.0)
+  ember-auth-module-auth_redirectable-rails (~> 1.0)
   ember-auth-module-ember_data-rails (~> 1.0)
   ember-auth-rails (~> 5.0)
   ember-auth-request-jquery-rails (~> 1.0)

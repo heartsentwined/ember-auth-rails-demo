@@ -1,0 +1,4 @@
+h1
+  email
+link-to 'users.index'
+  | Back to users list
