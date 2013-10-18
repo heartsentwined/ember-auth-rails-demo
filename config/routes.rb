@@ -5,5 +5,8 @@ EmberAuthRailsDemo::Application.routes.draw do
       post   'sign_in'  => 'sessions#create'
       delete 'sign_out' => 'sessions#destroy'
     end
+
+    resources :posts, only: [:index, :show]
+    resources :users, only: [:index, :show]
   end
 end
