@@ -1,0 +1,4 @@
+if auth.signedIn
+  render 'auth/sign-out'
+else
+  render 'auth/sign-in'
