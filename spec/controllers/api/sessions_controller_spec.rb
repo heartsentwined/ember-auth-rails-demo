@@ -9,17 +9,13 @@ describe Api::SessionsController do
     context 'no param' do
       before { post :create }
 
-      it 'returns http 400' do
-        response.response_code.should == 400
-      end
+      it_behaves_like 'http code', 400
     end
 
     context 'wrong credentials' do
       before { post :create, email: user.email, password: '' }
 
-      it 'returns http 401' do
-        response.response_code.should == 401
-      end
+      it_behaves_like 'http code', 401
     end
 
     context 'normal email + password auth' do
@@ -33,23 +29,30 @@ describe Api::SessionsController do
         response.response_code.should == 201
       end
     end
+
+    context 'remember token auth' do
+      it_behaves_like 'auth response' do
+        let(:params) do
+          user.remember_me!
+          data = User.serialize_into_cookie(user)
+          token = "#{data.first.first}-#{data.last}"
+          { remember_token: token }
+        end
+      end
+    end
   end
 
   describe 'DELETE destroy' do
     context 'no param' do
       before { delete :destroy }
 
-      it 'returns http 400' do
-        response.response_code.should == 400
-      end
+      it_behaves_like 'http code', 400
     end
 
     context 'wrong credentials' do
       before { delete :destroy, auth_token: '' }
 
-      it 'returns http 401' do
-        response.response_code.should == 401
-      end
+      it_behaves_like 'http code', 401
     end
 
     context 'normal auth token param' do
@@ -58,9 +61,7 @@ describe Api::SessionsController do
 
       it { should include 'user_id' }
 
-      it 'returns http 200' do
-        response.response_code.should == 200
-      end
+      it_behaves_like 'http code', 200
     end
   end
 end

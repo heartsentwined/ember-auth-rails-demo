@@ -8,6 +8,7 @@ EmberAuthRailsDemo.Auth = Em.Auth.extend
     'emberData'
     'authRedirectable'
     'actionRedirectable'
+    'rememberable'
   ]
 
   signInEndPoint: '/api/sign_in'
@@ -30,3 +31,8 @@ EmberAuthRailsDemo.Auth = Em.Auth.extend
     # signOutSmart defaults to false already
     # since we are not using smart sign out redirect,
     # we don't have to touch signOutBlacklist
+
+  rememberable:
+    tokenKey: 'remember_token'
+    period: 7 # days
+    autoRecall: true

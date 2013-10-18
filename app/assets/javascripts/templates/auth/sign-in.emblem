@@ -3,4 +3,8 @@ form submit='signIn'
   =input type='text' value=email
   label Password
   =input type='password' value=password
+
+  =input type='checkbox' checked=remember
+  label Remember me
+
   button Sign In

@@ -29,6 +29,7 @@ gem 'ember-auth-session-cookie-rails', '~> 1.0' # use cookies
 gem 'ember-auth-module-ember_data-rails', '~> 1.0' # ember-data integration
 gem 'ember-auth-module-auth_redirectable-rails', '~> 1.0' # auth-only routes
 gem 'ember-auth-module-action_redirectable-rails', '~> 1.0' # post- sign in/out redirect
+gem 'ember-auth-module-rememberable-rails', '~> 1.0' # remember me
 
 group :test do
   gem 'rspec-rails', '~> 2.13' # test framework
