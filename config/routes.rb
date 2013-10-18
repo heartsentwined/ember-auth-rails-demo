@@ -9,4 +9,7 @@ EmberAuthRailsDemo::Application.routes.draw do
     resources :posts, only: [:index, :show]
     resources :users, only: [:index, :show]
   end
+
+  root to: 'home#index'
+  get '*ember' => 'home#index'
 end
