@@ -21,3 +21,5 @@
 
 # Gemnasium gem configuration file
 config/gemnasium.yml
+.ruby-version
+.ruby-gemset
