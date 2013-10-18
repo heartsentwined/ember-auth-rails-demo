@@ -1,7 +1,0 @@
-EmberAuthRailsDemo.AuthView
-.nav
-  linkTo posts.index
-    | Posts list
-  linkTo users.index
-    | Users list
-outlet
